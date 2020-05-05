@@ -1,14 +1,10 @@
-const cartBtn = document.getElementById('cart-btn'),
-    modal = document.querySelector('.modal'),
-    closeBtn = document.querySelector('.close'),
-    cancelBtn = document.getElementById('cancel-btn');
+const cartButton = document.querySelector("#cart-button");
+const modal = document.querySelector(".modal");
+const close = document.querySelector(".close");
 
-cartBtn.addEventListener('click', toggleModal);
-closeBtn.addEventListener('click', toggleModal);
-cancelBtn.addEventListener('click', toggleModal);
+cartButton.addEventListener("click", toggleModal);
+close.addEventListener("click", toggleModal);
 
 function toggleModal() {
-    modal.classList.toggle('visible');
+  modal.classList.toggle("is-open");
 }
-
-new WOW().init();
