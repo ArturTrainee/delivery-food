@@ -54,7 +54,7 @@ function returnMainContent() {
 const validate = function (str) {
     const nameRegex = /^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$/;
     return nameRegex.test(str);
-}
+};
 
 function logIn(event) {
     event.preventDefault();
@@ -126,7 +126,7 @@ function createRestaurantCard({ image, kitchen, name, price, products, stars,
             <div class="card-text">
                 <div class="card-heading">
                     <h3 class="card-title">${name}</h3>
-                    <span class="card-tag tag">${timeOfDelivery}</span>
+                    <span class="card-tag tag">${timeOfDelivery} минут</span>
                 </div>
                 <div class="card-info">
                 <div class="rating">${stars}</div>
